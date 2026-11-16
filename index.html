@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Chomp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hud">
+        <div>
+          <p class="label">Game</p>
+          <h1>Maze Chomp</h1>
+        </div>
+        <div class="stats" aria-live="polite">
+          <div class="stat"><span>Score</span><strong id="score">0</strong></div>
+          <div class="stat"><span>Best</span><strong id="best-score">0</strong></div>
+          <div class="stat"><span>Level</span><strong id="level">1</strong></div>
+          <div class="stat"><span>Lives</span><strong id="lives">3</strong></div>
+        </div>
+      </header>
+
+      <section class="game-panel">
+        <canvas id="game" width="480" height="480" aria-label="Maze Chomp game area"></canvas>
+        <div class="overlay" id="overlay">
+          <h2 id="overlay-title">Ready?</h2>
+          <p id="overlay-text">Use the arrow keys or WASD to chomp your way through the maze.</p>
+          <button id="start-button" type="button">Start game</button>
+        </div>
+      </section>
+
+      <footer class="controls">
+        <p>Move: Arrow keys / WASD</p>
+        <p>Eat pellets, dodge ghosts, and finish each maze.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
